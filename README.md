@@ -15,3 +15,16 @@ The following components are required for this project:
 1. Install Virtual Box
 2. Install Vagrant and `vagrant up`
 3. Clone this repository
+
+### First steps after install
+
+1. Start vagrant with `vagrant ssh`
+2. Load the data with `psql -d news -f newsdata.sql` to connect a database and run the necessary SQL statements
+3. Run news.py with python3
+
+# Contents of the database
+
+- Authors table
+- Articles table
+- Log table
+
