@@ -33,9 +33,9 @@ def print_most_popular_article():
     c.execute(sql_query)
     result = c.fetchall()
     db.close()
-    print ("\nPupular Articles:\n")
+    print("\nPupular Articles:\n")
     for i in range(0, len(result), 1):
-        print ("\"" + result[i][0] + "\" - " + str(result[i][1]) + " views")
+        print("\"" + result[i][0] + "\" - " + str(result[i][1]) + " views")
 
 
 # 2. Who are the most popular article authors of all time?
@@ -61,9 +61,9 @@ def print_most_popular_authors():
     c.execute(sql_query)
     result = c.fetchall()
     db.close()
-    print ("\nPopular Authors:\n")
+    print("\nPopular Authors:\n")
     for i in range(0, len(result), 1):
-        print ("\"" + result[i][0] + "\" - " + str(result[i][1]) + " views")
+        print("\"" + result[i][0] + "\" - " + str(result[i][1]) + " views")
 
 
 # 3. On which days did more than 1% of requests lead to errors?
@@ -90,7 +90,7 @@ def print_error_days():
     c.execute(query)
     result = c.fetchall()
     db.close()
-    print ("\nDay with more than 1% of errors:\n")
+    print("\nDay with more than 1% of errors:\n")
     for i in range(0, len(result), 1):
         print(str(result[i][0]) + " - " + str(round(result[i][3], 2)) + "%err")
 
