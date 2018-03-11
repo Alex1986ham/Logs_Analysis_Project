@@ -2,6 +2,7 @@ import psycopg2
 
 dbname = "news"
 
+
 def create_connection():
     """Connects to the database news and returns the two values db and c"""
     db = psycopg2.connect(database=dbname)
@@ -9,6 +10,8 @@ def create_connection():
     return db, c
 
 # 1. What are the most popular three articles of all time?
+
+
 def most_popular_articles_view():
     """Creates a view of the most viewed articles, by connecting the two tables
     articles and log and counts the number of views grouped by the articles"""
@@ -20,6 +23,7 @@ def most_popular_articles_view():
     c.execute(sql_query)
     db.commit()
     db.close()
+
 
 def print_most_popular_article():
     """Takes the previously created view of the most viewed articles,
@@ -62,7 +66,6 @@ def print_most_popular_authors():
         print ("\"" + result[i][0] + "\" - " + str(result[i][1]) + " views")
 
 
-
 # 3. On which days did more than 1% of requests lead to errors?
 def error_days_view():
     """Creates a view with an overview of days on which more than 1% of an
@@ -89,12 +92,12 @@ def print_error_days():
     db.close()
     print ("\nDay with more than 1% of errors:\n")
     for i in range(0, len(result), 1):
-         print (str(result[i][0])+ " - "+str(round(result[i][3], 2))+"% errors")
+        print(str(result[i][0]) + " - " + str(round(result[i][3], 2)) + "%err")
 
 
 most_popular_articles_view()
 print_most_popular_article()
 most_pupular_authors_view()
 print_most_popular_authors()
-error_days_view ()
+error_days_view()
 print_error_days()
