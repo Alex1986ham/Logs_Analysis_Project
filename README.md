@@ -9,3 +9,9 @@ The following components are required for this project:
 - Virtual Box
 - Vagrant
 - Python 3
+
+### Setup
+
+1. Install Virtual Box
+2. Install Vagrant and 'vagrant up'
+3. Clone this repository
