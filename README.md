@@ -13,5 +13,5 @@ The following components are required for this project:
 ### Setup
 
 1. Install Virtual Box
-2. Install Vagrant and 'vagrant up'
+2. Install Vagrant and `vagrant up`
 3. Clone this repository
