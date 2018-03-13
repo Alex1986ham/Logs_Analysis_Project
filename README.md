@@ -1,9 +1,11 @@
-# Aim of this project
+# Logs Analysis Project
+
+### Aim of this project
 
 This project analyzes the data of a newspaper database according to different criteria. 
 A Python code with built-in sql statements accesses the database and returns the results of the individual queries as text.
 
-# How to run it
+### How to run it
 
 The following components are required for this project:
 - Virtual Box
@@ -12,8 +14,8 @@ The following components are required for this project:
 
 ### Setup
 
-1. Install Virtual Box
-2. Install Vagrant and `vagrant up`
+1. Install Virtual Box / you can download the virtual machine [here](https://www.virtualbox.org/wiki/Downloads)
+2. Install Vagrant and `vagrant up` (you can download vagrant [here](https://www.vagrantup.com/downloads.html)
 3. Clone this repository
 
 ### First steps after install
